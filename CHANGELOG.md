@@ -7,3 +7,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## Unreleased
 
 ### Added
+
+- The ability to specify authorizers for any HTTP Authorization schemes, whether current or future, through the initializer. These can be anything responding to `#call` with a nilable string argument with a truthy value for success and a falsey one for failure.
+- The ability the set the route for the deploy hook.
