@@ -10,7 +10,9 @@ class RodaApp < Bridgetown::Rack::Roda
     end
   )
   plugin :bridgetown_ssr
+  plugin :bridgetown_deploy_hook
 
   route do |r|
+    r.bridgetown_deploy_hook
   end
 end
